@@ -25,13 +25,13 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
+// console.log(JsUser.email) //yh best trika nhi hai value access kren ka .
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])
 // console.log(JsUser[mySym])
 
 JsUser.email = "Aditya@chatgpt.com"
-// Object.freeze(JsUser)
+// Object.freeze(JsUser) //object freeze kr diya hai ab object ki koi bhi value change nhi hogi
 JsUser.email = "Aditya@microsoft.com"
 // console.log(JsUser); // value phele hi freeze krdi ab yeh chatgpt ki jgh microsoft nhi krega.
 
@@ -39,7 +39,7 @@ JsUser.greeting = function(){
     console.log("Hello JS user");
 }
 JsUser.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.name}`); // yahan pr this isiliye lgaya hai kyunki sam object ko refer kr rhe hai.
 }
 
 console.log(JsUser.greeting);

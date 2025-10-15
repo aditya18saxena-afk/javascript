@@ -1,6 +1,6 @@
-// const tinderUser = new Object()
+// const tinderUser = new Object() // yeh ek singleton object hai
 
-const tinderUser = {}
+const tinderUser = {} // yeh ek non-singleton object hai.
 
 
 //key value ke bina input kr diya object mei 
@@ -34,7 +34,7 @@ const obj4 = {5:"c",6:"d"}
 // const obj3 ={obj1,obj2}
 // console.log(obj3);
 
-// const obj3 = Object.assign({},obj1,obj2,obj4)
+// const obj3 = Object.assign({},obj1,obj2,obj4) // isme{} yeh hota hai target and 2nd se jo bhi hota hai vo source hota hai.
 
 const obj3 = {...obj1,...obj2,...obj4}
 console.log(obj3);
